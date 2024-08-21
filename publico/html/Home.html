@@ -5,19 +5,96 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Duane Semijoias</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+
 </head>
 
 <body>
 
+    <style>
+        body {
+            background-color: var(--body);
+        }
+
+        :root {
+            --fundo-campo-pesquisa: #cf90a263;
+            --body: #FBFBFB;
+
+        }
+
+        /* Input de pesquisa - header */
+
+        .input-container {
+            position: relative;
+        }
+
+        .input-container i {
+            position: absolute;
+            top: 50%;
+            right: 240px;
+            transform: translateY(-50%);
+            color: #AE4B67;
+        }
+
+        .input-container input {
+            width: 510px;
+            padding: 5px 5px 10px 10px;
+            font-size: 16px;
+            border-radius: 5px;
+            border: none;
+            background-color: var(--fundo-campo-pesquisa);
+        }
+
+        .input-container input:focus {
+            outline: none;
+            border-color: #AE4B67;
+            background-color: #ae4b6732;
+        }
+
+        /* imagem do logo - header */
+
+        img {
+            width: 103px;
+            height: 91px;
+        }
+
+        /*  */
+
+
+    </style>
+
     <header>
+
         <nav>
+
             <div>
-                <a href="#"></a>
-                <a href=""></a>
+
+                <div id="logo">
+                    <img src="../img/logoDuaneSemijoias.png" alt="DuaneSemijoias">
+                </div>
+
+                <div id="navegador">
+
+                    <div id="btnsLgn">
+                        <a href="#">Logar</a>
+                        <a href="#">Cadastrar</a>
+                    </div>
+
+                    <div >
+                        <div id="pesquisar" class="input-container">
+                            <input type="text" name="pesquisa" id="pesquisa" placeholder="O que esta buscando?">
+                            <i class="fa-solid fa-magnifying-glass"></i>
+                        </div>
+
+                        <i class="fa-solid fa-bars"></i>
+                    </div>
+
+                </div>
+
             </div>
 
-
         </nav>
+
     </header>
 
     <main></main>
@@ -27,3 +104,11 @@
 </body>
 
 </html>
+
+<!--home, pagina de cadastro, login, alterar senha, administrador(cadastrar produtos{personalizar produto é opcional} e outro administrador, 
+controle de estoque, adicionar descontos, pedidos enviados, pedidos em espera),itens favoritados, pagina para pagamento, 
+pagina de cleinte(acompanhar pedido, ultimos pedidos, dados cadastrais, configurações da conta) -->
+
+<!-- produto: nome, descrição, quantidade em estoque, valor, foto -->
+
+<!-- https://www.youtube.com/watch?v=gXWohFYrI0M carrinho de compras-->
